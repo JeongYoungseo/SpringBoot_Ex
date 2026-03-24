@@ -1,4 +1,4 @@
-package kr.ac.kopo.youngseo.springboot_example.controller;
+package kr.ac.kopo.youngseo.springboot_ex.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
