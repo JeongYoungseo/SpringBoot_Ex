@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sing up</title>
+</head>
+<body>
+<h3>회원가입</h3>
+<form action="member" method="post">
+    <p>아이디 : <span th:text="${member.id}"></span></p>
+    <p>비밀번호 :<span th:text="${member.passwd}"></span></p>
+    <p>거주지 :<span th:text="${member.city}"></span></p>
+    <p>성별 :<span th:text="${member.gender}"></span></p>
+    <p>취미 :<span th:each="hobby : ${member.hobby}" th:text="${hobby} + '|'"></span></p>
+    <p><span th:text="${member.id}"></span></p>
+</form>
+</body>
+</html>
