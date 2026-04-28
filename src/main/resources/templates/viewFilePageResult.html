@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload Result</title>
+</head>
+<body>
+  <h1 th:text="${title}"></h1>
+  <p>OriginFileName: <span th:utext="${originFileName}"/></p>
+  <p>SaveFileName: <span th:utext="${saveFileName}"/></p>
+  <p><img th:src="'/images/'+ ${saveFileName}" width="250"/></p>
+</body>
+</html>
