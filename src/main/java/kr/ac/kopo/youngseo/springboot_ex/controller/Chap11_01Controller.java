@@ -28,12 +28,12 @@ public class Chap11_01Controller {
         throw new UserException("UserException @ExceptionHandler Message");
     }
 
-    @ExceptionHandler(UserException.class)
-    public String handlerException(UserException ex, Model model) {
-        model.addAttribute("data1", ex.getMessage());
-        model.addAttribute("data2", ex.getMessage());
-        return "viewPage11_01";
-    }
+//    @ExceptionHandler(UserException.class)
+//    public String handlerException(UserException ex, Model model) {
+//        model.addAttribute("data1", ex.getMessage());
+//        model.addAttribute("data2", ex.getMessage());
+//        return "viewPage11_01";
+//    }
 
     @GetMapping("/exam4")
     public void requestMethod04(){
