@@ -49,9 +49,17 @@ public class Chap14_01Controller {
         return "viewPage02_edit";
     }
 
+// Update 실행
     @PostMapping("/update")
     public String updateMember(@ModelAttribute("member") Member3 member3){
         repository.save(member3);
+        return "redirect:/exam14_01";
+    }
+
+// Delete
+    @GetMapping("/delete/{id}")
+    public String deleteMember(@PathVariable(name = "id")int id){
+        repository.deleteById(id);
         return "redirect:/exam14_01";
     }
 }
